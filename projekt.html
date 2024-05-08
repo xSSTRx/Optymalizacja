@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strzelczyk Film Studio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <section id="logo">
+            <img src="logo.png">
+        </section>
+        <h1>Profesjonalne Nagrywanie Filmów i Materiałów Reklamowych</h1>
+    </header>
+    
+    <nav>
+        <a href="#about">O Nas</a>
+        <a href="#services">Usługi</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#team">Nasz zespół</a>
+        <a href="#info">Informacje o stronie</a>
+        <a href="#contact">Kontakt</a>
+        
+    </nav>
+
+    <section id="about">
+        <h2>O Nas</h2>
+        <p>Firma Strzelczyk Film Studio to młode dynamiczne przedsiębiorstwo specjalizujące się w profesjonalnym nagrywaniu filmów i produkcji reklam. Nasz zespół doświadczonych specjalistów oferuje kompleksowe usługi, obejmujące wszystkie etapy procesu tworzenia wizualnych treści reklamowych. Dzięki zaawansowanemu sprzętowi i kreatywności naszych profesjonalistów, dostarczamy unikalne i skuteczne rozwiązania, które wyróżniają się na rynku. Niezależnie od tego, czy potrzebujesz filmu korporacyjnego, reklamy produktowej czy kampanii reklamowej, nasza firma jest gotowa przekształcić Twoją wizję w znakomitą rzeczywistość</p>
+    </section>
+
+    <section id="services">
+        <h2>Usługi</h2>
+        <h3>Produkcja Filmów Korporacyjnych</h3>
+            <p>Tworzymy wysokiej jakości filmy korporacyjne, które skutecznie prezentują wartości Twojej firmy, misję oraz osiągnięcia. Nasze produkcje pomagają w budowaniu zaufania klientów i wzmocnieniu marki</p>
+            
+            <h3>Telewizyjne i Internetowe</h3>
+            <p>Zapewnimy Ci profesjonalne podejście do produkcji reklam, które przyciągną uwagę i skutecznie przekroczą bariery rynkowe. Działamy zarówno w obszarze telewizji, jak i platform internetowych.
+            
+            <h3>Wydarzeń i Konferencji</h3>
+            <p>Dokumentujemy najważniejsze chwile podczas Twoich wydarzeń biznesowych, konferencji czy spotkań korporacyjnych. Nasze kamery uchwycą atmosferę i istotę każdego zdarzenia.</p>
+            
+            <h3>Produkcja Spotów Reklamowych dla Mediów Społecznościowych</h3>
+            <p>Tworzymy krótkie, dynamiczne spoty reklamowe dostosowane do platform społecznościowych. Nasze rozwiązania pomagają w zwiększeniu zaangażowania i skuteczności kampanii online.</p>
+            
+            <h3>Edycja i Postprodukcja</h3>
+            <p>Nasz zespół specjalistów ds. montażu i postprodukcji zadba o to, aby Twoje materiały wideo były perfekcyjnie zredagowane, a ich treść była atrakcyjna i zgodna z zamierzeniami.</p>
+            
+            <h3>Wideoblogi i Tworzenie Treści Online</h3>
+            <p>Pomagamy w budowaniu osobistej marki poprzez produkcję regularnych wideoblogów i treści online. Dzięki naszej pomocy, zyskasz zaufanie swojej audiencji i wyróżnisz się na konkurencyjnym rynku online.</p>
+            
+            <h3>Konsultacje i Doradztwo Wideo</h3>
+            <p>Oferujemy kompleksowe doradztwo w zakresie strategii wideo. Pomożemy Ci określić cele, stworzyć plan działania i zoptymalizować wykorzystanie wideo w marketingu.</p>
+    </section>
+
+    <section id="portfolio">
+        <h2>Portfolio</h2>
+        
+        <img src="KINO.jpg">
+        <img src="aparat.jpg">
+        <img src="statyw.jpg">
+      
+    </section>
+    <section id="team">
+        <h1>Nasz zespół</h1>
+        <img src="avatar.png">
+        <h3>Szymon Strzelczyk</h3>
+        <p>CEO firmy.Kamerzysta, scenarzysta</p>
+        <img src="avatar.png">
+        <h3>Marcin Nowak</h3>
+        <p>Główny montażysta, specjalista ds.dźwięku</p>
+        <img src="avatar.png">
+        <h3>Przemysław Kowalski</h3>
+        <p>Specjalista ds.oświetlenia</p>
+        <img src="avatar2.png">
+        <h3>Iga Kowalczyk</h3>
+        <p>Scenarzystka, specjalistka ds.reklamy</p>
+    </section>
+    <section id="info">
+        <h2>Informacje</h2>
+        <p>Informacje na temat tej strony internetowej możesz zobaczyć <a href="strona_info.html" target="_blank">tutaj</a></p>
+    </section>
+    <section id="contact">
+        <h2>Kontakt</h2>
+        <p>Skontaktuj się z nami, aby omówić szczegóły i zlecić nagranie filmu lub produkcję reklamy.</p>
+        <p>Adres: ul.Narutowicza 50, 97-500 Radomsko</p>
+        <p>Telefon: 123-456-789</p>
+        <p>Email: kontakt@SFS.com</p>
+        
+        <!-- Formularz kontaktowy -->
+        <form id="contactForm">
+            <label for="name">Imię i Nazwisko:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Wiadomość:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit">Wyślij</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; Copyright by Szymon Strzelczyk</p>
+    </footer>
+
+    <!-- Skrypt JavaScript -->
+    <script>
+        // płynne przejscia
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Obsługa formularza
+        document.getElementById('contactForm').addEventListener('submit', function (e) {
+            e.preventDefault();
+            alert('Dziękujemy za kontakt! Odpowiemy jak najszybciej.');
+        });
+    </script>
+</body>
+</html>
